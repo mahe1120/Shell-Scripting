@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Please enter username::"
-read USERNAME
+read -s USERNAME
 echo "User name entered::$USERNAME"
