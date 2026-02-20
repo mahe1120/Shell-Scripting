@@ -10,6 +10,8 @@ TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE=$(echo $0 | cut -d "." -f1)
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
+mkdir -p $LOGS_FOLDER
+
 CHECK_ROOT()
 {
 if [ $USERID -ne 0 ]
