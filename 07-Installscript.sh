@@ -40,7 +40,7 @@ dnf list installed mysql &>>$LOG_FILE_NAME   # To Check if mysql is installed or
 if [ $? -ne 0 ]
 then
     echo "MySQL is not installed."
-    dnf install mysql &>>$LOG_FILE_NAME
+    dnf install mysql -y &>>$LOG_FILE_NAME
     VALIDATE $? "Installing MYSQL"
 fi
 
