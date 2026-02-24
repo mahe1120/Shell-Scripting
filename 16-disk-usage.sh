@@ -10,7 +10,7 @@ do
     echo "Partition:$PARTITION , Usage:$USAGE"
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then
-        echo "High Disk Usage on partition:$PARTITION, Usage:$USAGE"
+        echo "High Disk Usage on partition:$PARTITION Usage is:$USAGE \n"
     fi
 done <<< $DISK_USAGE
 
