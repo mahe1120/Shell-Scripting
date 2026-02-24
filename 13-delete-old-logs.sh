@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-SOURCEDIR="var\log\expense-logs"
+SOURCEDIR="/var/log/expense-logs"
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
 
