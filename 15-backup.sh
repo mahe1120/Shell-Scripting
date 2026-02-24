@@ -47,11 +47,11 @@ echo "Script started executing at the timestamp :: $TIMESTAMP"
 
 FILES=$(find $SOURCEDIR -name "*.log" -mtime +$DAYS)
 
-if [ -n $FILES ] # -n --> true if there are files to zip.
+if [ -n "$FILES" ] # -n --> true if there are files to zip.
 then
     echo "Files are : $FILES"
     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
-    find $SOURCEDIR -name "*.log" -mtime +$DAYS | zip @ $ZIP_FILE
+    find $SOURCEDIR -name "*.log" -mtime +$DAYS | zip @ "$ZIP_FILE"
     if [ -f $ZIP_FILE ] # -f --> To check if file exists
     then 
         echo -e "Successflly created zip file for older files"
