@@ -8,7 +8,7 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 SOURCEDIR=$1
 DEST_DIR=$2
-DAYS=${3: -14} # If user did not provide no. of days then script will take 14 days as default.
+DAYS=${3:-14} # If user did not provide no. of days then script will take 14 days as default.
 
 CHECK_ROOT()
 {
